@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --background-color: #2B2D42;
+    --secondary-background-color: #555667;
+    --text-color: #f8f7f9;
+    --detail-color: #92dce5;
+    --x-color: #ef8275;
+    --o-color: #e2c044;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 42px;
+    margin: 20px;
+}
+
+#message {
+    font-size: 30px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--secondary-background-color);
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--detail-color);
+}
+
+.cell {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--detail-color);
+    text-align: center;
+    line-height: 100px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.x {
+    color: var(--x-color);
+}
+
+.o {
+    color: var(--o-color);
+}
+
+button {
+    background-color: var(--detail-color);
+    padding: 10px 20px;
+    border: 1px solid var(--detail-color);
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+}
