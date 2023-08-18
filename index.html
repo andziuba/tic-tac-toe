@@ -8,7 +8,20 @@
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
-    <div id="container">
+
+    <div id="mode-container">
+        <div>Choose a game mode</div>
+        <button id="player-player">Player vs Player</button>
+        <button id="player-computer">Player vs Computer</button>
+    </div>
+
+    <div id="difficulty-container" style="display: none;">
+        <div>Choose a game difficulty</div>
+        <button id="easy">Easy</button>
+        <button id="hard">Hard</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
         <div id="message"></div>
         <div id="board-container">
             <div id="board">
