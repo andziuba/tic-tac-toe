@@ -2,9 +2,10 @@
 
 :root {
     --background-color: #2B2D42;
-    --secondary-background-color: #555667;
+    --secondary-background-color: #52557d;
     --text-color: #f8f7f9;
     --detail-color: #92dce5;
+    --secondary-detail-color: #d0f0f4;
     --x-color: #ef8275;
     --o-color: #e2c044;
 }
@@ -26,17 +27,35 @@ body {
 
 h1 {
     font-size: 42px;
-    margin: 20px;
+    margin: 40px;
+}
+
+#mode-container,
+#difficulty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mode-container > div,
+#difficulty-container > div {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--detail-color);
+    padding: 10px 20px;
+    border: 4px solid var(--detail-color);
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    width: 282px;
 }
 
 #message {
     font-size: 30px;
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    margin-bottom: 20px;
 }
 
 #board {
@@ -46,6 +65,8 @@ h1 {
     width: 300px;
     height: 300px;
     border: 2px solid var(--detail-color);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-bottom: 20px;
 }
 
 .cell {
@@ -61,20 +82,19 @@ h1 {
     font-weight: 700;
 }
 
+.cell:hover,
+button:hover {
+    background-color: var(--secondary-detail-color);
+}
+
+.hover-disabled:hover {
+    background-color: var(--secondary-background-color);
+}
+
 .x {
     color: var(--x-color);
 }
 
 .o {
     color: var(--o-color);
-}
-
-button {
-    background-color: var(--detail-color);
-    padding: 10px 20px;
-    border: 1px solid var(--detail-color);
-    margin-top: 20px;
-    font-family: "Poppins", sans-serif;
-    border-radius: 5px;
-    font-size: 20px;
 }
