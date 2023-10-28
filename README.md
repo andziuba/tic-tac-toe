@@ -1,3 +1,3 @@
-The Odin Project: Tic Tac Toe
+# Tic Tac Toe
 
 [View the site](https://andziuba.github.io/tic-tac-toe/)
